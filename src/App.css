@@ -1,0 +1,86 @@
+/* ===== Rosé Pine Theme ===== */
+:root {
+  --base: #191724;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  background: var(--base);
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+/* App layout */
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--overlay);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--iris);
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Links */
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: var(--foam);
+}
+
+/* CTA button */
+.cta {
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--love);
+  color: white !important;
+  font-weight: 600;
+}
+
+/* CTA hover */
+.cta:hover {
+  background: var(--gold);
+  color: black !important;
+}
+
+/* Main content */
+.main-content {
+  padding: 20px;
+}

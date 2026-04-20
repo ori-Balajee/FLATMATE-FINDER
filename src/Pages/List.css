@@ -1,0 +1,93 @@
+/* ===== Rosé Pine Theme ===== */
+:root {
+  --base: #191724;
+  --surface: #1f1d2e;
+  --overlay: #26233a;
+  --muted: #6e6a86;
+  --text: #e0def4;
+  --love: #eb6f92;
+  --gold: #f6c177;
+  --pine: #31748f;
+  --foam: #9ccfd8;
+  --iris: #c4a7e7;
+}
+
+/* Page background */
+body {
+  background: var(--base);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Center container */
+.container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 25px;
+  background: var(--surface);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  color: var(--text);
+}
+
+/* Title */
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--iris);
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Inputs */
+input,
+select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--overlay);
+  background: var(--overlay);
+  color: var(--text);
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+input::placeholder {
+  color: var(--muted);
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+  border-color: var(--iris);
+  box-shadow: 0 0 8px rgba(196, 167, 231, 0.4);
+  transform: scale(1.02);
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--love);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+button:hover {
+  background: var(--gold);
+  color: black;
+  transform: translateY(-2px);
+}
+
+/* Click */
+button:active {
+  transform: scale(0.98);
+}
